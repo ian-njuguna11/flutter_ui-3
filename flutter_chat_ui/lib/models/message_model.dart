@@ -67,7 +67,19 @@ List<Message> chats = [
       time: '10:30 AM',
       text: 'Hey, how\'s it going? What did you do today?',
       isLiked: false,
-      unread: false)
+      unread: false),
+  Message(
+      sender: devid,
+      time: '10:31 AM',
+      text: 'Where are you',
+      isLiked: false,
+      unread: false),
+  Message(
+      sender: ross,
+      time: '10:31 AM',
+      text: 'Loved it.',
+      isLiked: false,
+      unread: false),
 ];
 
 //example messages in chat screen
