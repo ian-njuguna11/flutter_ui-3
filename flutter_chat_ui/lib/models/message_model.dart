@@ -85,57 +85,9 @@ List<Message> chats = [
 //example messages in chat screen
 List<Message> messages = [
   Message(
-      sender: joye,
-      time: '1:30 PM',
-      text: 'Hey, how\'s it going? What did you do today?',
-      isLiked: true,
-      unread: true),
-  Message(
       sender: currentUser,
-      time: '2:10 PM',
-      text: 'Just working on flutter UI learning. Flutter is awasome.',
-      isLiked: false,
-      unread: true),
-  Message(
-      sender: joye,
-      time: '2:11 PM',
-      text: 'Thats great. I also started. Doing new things...',
-      isLiked: false,
-      unread: true),
-  Message(
-      sender: currentUser,
-      time: '03:00 PM',
-      text: 'Great to talk to you. Which part?',
-      isLiked: false,
-      unread: true),
-  Message(
-      sender: joye,
-      time: '03:10 PM',
-      text: 'Docker container\'s',
-      isLiked: false,
-      unread: true),
-  Message(
-      sender: joye,
-      time: '03:10 PM',
-      text: 'I will start it tomorrow.',
-      isLiked: false,
-      unread: true),
-  Message(
-      sender: currentUser,
-      time: '04:10 PM',
-      text: 'I am going to eat food. Are you comming?',
-      isLiked: false,
-      unread: true),
-  Message(
-      sender: joye,
-      time: '04:15 PM',
-      text: 'Where?',
-      isLiked: false,
-      unread: true),
-  Message(
-      sender: currentUser,
-      time: '04:15 PM',
-      text: 'Near-by resto where we usually go.',
+      time: '04:16 PM',
+      text: 'Yes, Waiting for you........',
       isLiked: false,
       unread: true),
   Message(
@@ -147,8 +99,56 @@ List<Message> messages = [
       unread: true),
   Message(
       sender: currentUser,
-      time: '04:16 PM',
-      text: 'Yes, Waiting for you........',
+      time: '04:15 PM',
+      text: 'Near-by resto where we usually go.',
       isLiked: false,
+      unread: true),
+  Message(
+      sender: joye,
+      time: '04:15 PM',
+      text: 'Where?',
+      isLiked: false,
+      unread: true),
+  Message(
+      sender: currentUser,
+      time: '04:10 PM',
+      text: 'I am going to eat food. Are you comming?',
+      isLiked: false,
+      unread: true),
+  Message(
+      sender: joye,
+      time: '03:10 PM',
+      text: 'I will start it tomorrow.',
+      isLiked: true,
+      unread: true),
+  Message(
+      sender: joye,
+      time: '03:10 PM',
+      text: 'Docker container\'s',
+      isLiked: false,
+      unread: true),
+  Message(
+      sender: currentUser,
+      time: '03:00 PM',
+      text: 'Great to talk to you. Which part?',
+      isLiked: false,
+      unread: true),
+  Message(
+      sender: joye,
+      time: '2:11 PM',
+      text: 'Thats great. I also started. Doing new things...',
+      isLiked: true,
+      unread: true),
+  Message(
+      sender: currentUser,
+      time: '2:10 PM',
+      text: 'Just working on flutter UI learning. Flutter is awasome.',
+      isLiked: false,
+      unread: true),
+  Message(
+      sender: joye,
+      time: '1:30 PM',
+      text: 'Hey, how\'s it going? What did you do today?',
+      isLiked: true,
       unread: true),
 ];
