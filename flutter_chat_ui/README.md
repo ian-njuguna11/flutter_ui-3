@@ -1,22 +1,6 @@
-<!-- # flutter_chat_ui
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference. -->
 
 # What I learn from this UI:
-#### To share a Theme across an entire app, provide a `ThemeData` to the MaterialApp constructor.Now that you’ve defined a theme, use it within the widgets’ build() methods by using the `Theme.of(context)` method.
+##### To share a Theme across an entire app, provide a `ThemeData` to the MaterialApp constructor.
 
 ```
 MaterialApp(
@@ -27,6 +11,7 @@ MaterialApp(
       home: HomeScreen(),
     );
 ```
+##### Now that you’ve defined a theme, use it within the widgets’ build() methods by using the `Theme.of(context)` method.
 ``` 
 Container(
   color: Theme.of(context).accentColor,
@@ -36,7 +21,7 @@ Container(
   ),
 );
 ```
-#### In row/column use `MainAxisAlignment.spaceBetween` place the free space evenly between the children.
+##### In row/column use `MainAxisAlignment.spaceBetween` place the free space evenly between the children.
 ```
 Row /*or Column*/( 
   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -47,18 +32,18 @@ Row /*or Column*/(
   ],
 ),
 ```
-#### If I want to have a specific size, I use `SizedBox`. Lately I've even been using `SizedBox` in place of paddings to separate items in `Column` or `Row`.
+##### If I want to have a specific size, I use `SizedBox`. Lately I've even been using `SizedBox` in place of paddings to separate items in `Column` or `Row`.
 
-#### A widget that expands a child of a Row, Column, or Flex so that the child fills the available space is `Expanded`. 
+##### A widget that expands a child of a Row, Column, or Flex so that the child fills the available space is `Expanded`. 
 If multiple children are expanded, the available space is divided among them according to the `flex` factor.
 
 An `Expanded` widget must be a descendant of a `Row`, `Column`, or `Flex`, and the path from the Expanded widget to its enclosing `Row`, `Column`, or `Flex` must contain only `StatelessWidgets` or `StatefulWidgets` (not other kinds of widgets, like `RenderObjectWidgets`).
 
-#### Widget under `Flexible` are by default `WRAP_CONTENT` although you can change it using parameter `Fit`.
+##### Widget under `Flexible` are by default `WRAP_CONTENT` although you can change it using parameter `Fit`.
 
-#### Widget under `Expanded` is `MATCH_PARENT` you can change it using `flex`.
+##### Widget under `Expanded` is `MATCH_PARENT` you can change it using `flex`.
 
-#### To handle text overflow use
+##### To handle text overflow use
 
 > Using Ellipsis
 ```
@@ -122,7 +107,7 @@ ClipRRect(
 
 #### `ListView.Builder` reverse property
 
- if the reading direction is left-to-right and `scrollDirection` is `Axis.horizontal`, then the scroll view scrolls from left to right when `reverse` is false and from right to left when `reverse` is true.
+ If the reading direction is left-to-right and `scrollDirection` is `Axis.horizontal`, then the scroll view scrolls from left to right when `reverse` is false and from right to left when `reverse` is true.
  Similarly, if `scrollDirection` is `Axis.vertical`, then the scroll view scrolls from top to bottom when `reverse` is false and from bottom to top when `reverse` is true.
 
 #### Dismissing keyboard programmatically
