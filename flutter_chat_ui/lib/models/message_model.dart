@@ -1,5 +1,3 @@
-import 'dart:core';
-
 import 'package:flutter_chat_ui/models/user_model.dart';
 
 class Message {
@@ -17,26 +15,26 @@ final User currentUser =
     User(id: 0, name: "Current user", imageUrl: 'assets/images/monica.jpg');
 //User
 final User monica =
-    User(id: 1, name: "Monica", imageUrl: 'assets/image/monica.jpg');
+    User(id: 1, name: "Monica", imageUrl: 'assets/images/monica.jpg');
 
 final User rachel =
-    User(id: 2, name: "Rachel", imageUrl: 'assets/image/rachel.jpg');
+    User(id: 2, name: "Rachel", imageUrl: 'assets/images/rachel.jpg');
 
-final User john = User(id: 3, name: "John", imageUrl: 'assets/image/john.jpg');
+final User john = User(id: 3, name: "John", imageUrl: 'assets/images/john.jpg');
 
-final User joye = User(id: 4, name: "Joye", imageUrl: 'assets/image/joye.jpg');
+final User joye = User(id: 4, name: "Joye", imageUrl: 'assets/images/joye.jpg');
 final User devid =
-    User(id: 5, name: "Devid", imageUrl: 'assets/image/devid.jpg');
+    User(id: 5, name: "Devid", imageUrl: 'assets/images/devid.jpg');
 final User phoebe =
-    User(id: 6, name: "Phoebe", imageUrl: 'assets/image/phoebe.jpg');
-final User ross = User(id: 7, name: "Ross", imageUrl: 'assets/image/ross.jpg');
+    User(id: 6, name: "Phoebe", imageUrl: 'assets/images/phoebe.jpg');
+final User ross = User(id: 7, name: "Ross", imageUrl: 'assets/images/ross.jpg');
 final User smith =
-    User(id: 8, name: "Smith", imageUrl: 'assets/image/smith.jpg');
+    User(id: 8, name: "Smith", imageUrl: 'assets/images/smith.jpg');
 final User chandler =
-    User(id: 9, name: "Chandler", imageUrl: 'assets/image/chandler.jpg');
+    User(id: 9, name: "Chandler", imageUrl: 'assets/images/chandler.jpg');
 
 //Favorite contacts
-List<User> favorites = [monica, rachel, joye, ross, chandler, phoebe];
+List<User> favorites = [monica, rachel, joye, ross, chandler];
 
 //example chat on home screen
 List<Message> chats = [
