@@ -17,3 +17,14 @@ fruit fruitListAgain = fruitMap.values.toList();
 ### stack widget
 
 ### by default crossAxisAlignment of Column is center.
+
+```Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (_) => DestinationScreen(destination: dest))),```
+
+
+####  onPressed: () => Navigator.pop(context)
+## Hero widget  for animation
+
+## defferace btw MainAxisAlignment nd CrossAxisAlignment
