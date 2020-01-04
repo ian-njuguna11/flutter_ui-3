@@ -84,16 +84,80 @@ Stack(
     ![Alt Column alignment](https://flutter.dev/assets/ui/layout/column-diagram-4e2ce8e33c32a09d090280fb7b2925baaf58f6de7876a551c207ab904e2fafc6.png)
 
 **Default crossAxisAlignment of Column is center.**
-<!-- **Default crossAxisAlignment of Column is center.**
+**Default crossAxisAlignment of Row is center.**
 
+4. **Navigate to the second route using `Navigator.push()`**
+To switch to a new route, use the `Navigator.push()` method. The `push()` method adds a **Route** to the stack of routes managed by the **Navigator**. Where does the Route come from? You can create your own, or use a `MaterialPageRoute`, which is useful because it transitions to the new route using a platform-specific animation.
+```
+// Within the `FirstRoute` widget
+onPressed: () {
+  Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => SecondRoute()),
+  );
+}
+```
+5. **Return to the first route using `Navigator.pop()`**
+By using the `Navigator.pop()` method. The `pop()`method removes the current **Route** from the stack of routes managed by the **Navigator**.
+```
+// Within the SecondRoute widget
+onPressed: () {
+  Navigator.pop(context);
+}
+```
+6. Creating custom transaction
+```
+onTap: () => Navigator.push( //1
+    context,
+    PageRouteBuilder(
+    opaque: true,
+    // 2
+    transitionDuration: const Duration(milliseconds: 1000),
+    // 3
+    pageBuilder: (BuildContext context, _, __) {
+        return DestinationScreen(
+        destination: dest,
+        );
+    },
+    // 4
+    transitionsBuilder:
+        (_, Animation<double> animation, __, Widget child) {
+        return FadeTransition(
+        opacity: animation,
+        child: RotationTransition(
+            turns: Tween<double>(begin: 0.0, end: 1.0)
+                .animate(animation),
+            child: child,
+        ),
+        );
+        },
+    ),
+),
+```
+7. **Hero Animations** 
 
-Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (_) => DestinationScreen(destination: dest))),
-
-
-####  onPressed: () => Navigator.pop(context)
-## Hero widget  for animation
+A Hero Animation in one sentence is simply an element of one screen **flying** to the next when the app goes to the next page.
+All we need is a way to tell Flutter that **both of them are linked**.
+We do this by **wrapping an element like an icon in a Hero widget**.
+```
+Hero(
+  tag: "DemoTag",
+  child: Icon(
+    Icons.add,
+    size: 70.0,
+  ),
+),
+```
+All we need is a Hero widget on the second page with the same tag.
+```
+Hero(
+  tag: "DemoTag",
+  child: Icon(
+    Icons.add,
+    size: 150.0,
+  ),
+),
+```
+` transitionOnUserGestures: true` to perform transaction on back button press **iOS back swipe**.
 
 ## defferace btw MainAxisAlignment nd CrossAxisAlignment -->

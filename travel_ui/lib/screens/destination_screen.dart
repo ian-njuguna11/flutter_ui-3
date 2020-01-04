@@ -45,6 +45,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                       fit: BoxFit.cover,
                     ),
                   ),
+                  transitionOnUserGestures: true,
                 ),
               ),
               Padding(
@@ -187,7 +188,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                               children: <Widget>[
                                 Container(
                                   padding: EdgeInsets.all(5.0),
-                                  width: 70.0,
+                                  width: 80.0,
                                   decoration: BoxDecoration(
                                     color: Theme.of(context).accentColor,
                                     borderRadius: BorderRadius.circular(10.0),
@@ -198,7 +199,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                                 SizedBox(width: 10.0),
                                 Container(
                                   padding: EdgeInsets.all(5.0),
-                                  width: 70.0,
+                                  width: 80.0,
                                   decoration: BoxDecoration(
                                     color: Theme.of(context).accentColor,
                                     borderRadius: BorderRadius.circular(10.0),

@@ -105,6 +105,7 @@ class DestinationCarousel extends StatelessWidget {
                                   fit: BoxFit.cover,
                                 ),
                               ),
+                              transitionOnUserGestures: true,
                             ),
                             Positioned(
                               left: 10.0,
